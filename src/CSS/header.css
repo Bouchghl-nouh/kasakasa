@@ -1,0 +1,30 @@
+
+header{
+  
+    width: 1240px;
+     height: 68px;
+     
+    gap: 720.678px;
+}
+.Kasa{
+    width: 150px;
+        height: 68px;
+}
+@media(max-width:1000px){
+    header{
+        width: 100%;
+    }
+}
+.links{
+display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    top: 8%;
+}
+.links li a{
+        color: var(--main-color);
+        text-decoration: none;
+}
+

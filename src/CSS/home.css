@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+}
+.main  h3{
+   width:100%;
+   height: 223px; 
+background: url('../assets/IMG.png') -5.076px -524px / 100.819% 226.723% ;
+display: flex;
+border-radius: 25px;
+filter: brightness(60%);
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: 600;
+}
+.cards{
+    margin:50px 20px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 340px 340px 340px;
+    gap : 50px;
+    
+   
+}
+.card{
+    position: relative;
+}
+.card img{
+    width:340px;
+    height: 340px;
+    border-radius: 10px;
+}
+.card p{
+    position: absolute;
+        bottom: 10%;
+        margin: 10px;
+        color: #FFF;
+        font-weight: 600;
+        
+}
