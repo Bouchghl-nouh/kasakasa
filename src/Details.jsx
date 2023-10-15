@@ -7,6 +7,8 @@ import "./CSS/detail.css";
 import db from "../public/DB/db.json";
 
 export default function Details() {
+  const emptyImage = '../src/assets/inactive.png';
+  const activeImage = '../src/assets/active.png'
   const { id } = useParams();
   const detail = db.find((item) => id == `:${item.id}`);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -103,14 +105,14 @@ export default function Details() {
               {Array.from({ length: detail.rating }).map((_, index) => (
                 <img
                   key={index}
-                  src={`../src/assets/${"active.png"}`}
+                  src={activeImage}
                   alt="image"
                 />
               ))}
               {Array.from({ length: 5-detail.rating }).map((_, index) => (
                 <img
                   key={index}
-                  src={`../src/assets/${ "inactive.png"   }`}
+                  src={emptyImage}
                   alt="image"
                 />
               ))}
